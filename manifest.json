@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Legal Buddy",
+    "version": "1.0",
+    "description": "Privacy Policy Sumarization and Detection of Unfair Clauses", 
+    "icons":{
+        "16":"icons/shield-16.png",
+        "32":"icons/shield-32.png"
+    },
+    "permissions":[
+        "tabs",
+        "*://*/*"
+    ],
+    "browser_action":{
+        "default_popup":"static/popup.html",
+        "default_icon": "icons/shield-32.png"
+    },
+    "content_scripts":[
+        {
+            "matches": ["<all_urls>"],
+            "js": ["static/popup.js", "static/content.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["static/background.js"]
+    }
+}

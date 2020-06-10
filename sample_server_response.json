@@ -1,0 +1,60 @@
+{
+    "categories": {
+        "FirstPartyCollection": [
+            {}, {}
+        ],
+        "ThirdPartySharing": [
+            {}, {}
+        ],
+        "UserChoice": [
+            {}, {}
+        ],
+        "UserAccess": [
+            {}, {}
+        ],
+        "DataRetention": [
+            {}, {}
+        ],
+        "DataSecurity": [
+            {}, {}
+        ],
+        "PolicyChange": [
+            {}, {}
+        ],
+        "DoNotTrack": [
+            {}, {}
+        ],
+        "International": [
+            {}, {}
+        ],
+        "Other": [
+            {}, {}
+        ]
+    },
+    "fairness": {
+        "Arbitration": [
+            {}, {}
+        ],
+        "UnilateralChange": [
+            {}, {}
+        ],
+        "ContentRemoval": [
+            {}, {}
+        ],
+        "Jurisdiction": [
+            {}, {}
+        ],
+        "ChoiceOfLaw": [
+            {}, {}
+        ],
+        "LimitationOfLiability": [
+            {}, {}
+        ],
+        "UnilateralTermination": [
+            {}, {}
+        ],
+        "ContractByUsing": [
+            {}, {}
+        ]
+    } 
+}

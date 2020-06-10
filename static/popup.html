@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Legal Buddy</title>
+	<link rel="stylesheet" type="text/css" href="/static/popup.css">
+	<script src="/static/popup.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="titleHeader">
+		Legal Buddy
+		<span id="statusIndicator">⬤</span>
+		<button id="analyzeButton">ANALYZE PAGE</button>
+	</div>
+	<div class="tabFolder">
+		<button class="tabLink" id="defaultTab">CATEGORIES</button>
+		<button class="tabLink">FAIRNESS</button>
+	</div>
+	<div id="alertBox" hidden></div>
+	<div class="tabContent" id="CATEGORIES">
+		<button class="accordion">
+			First Party Collection/Use
+			<span class="countSpan"></span>
+		</button>
+		<div class="panel" id="FirstPartyCollection"></div>
+
+		<button class="accordion">
+			Third Party Sharing/Collection
+			<span class="countSpan"></span>
+		</button>
+		<div class="panel" id="ThirdPartySharing"></div>
+
+		<button class="accordion">
+			User Choice/Control
+			<span class="countSpan"></span>
+		</button>
+		<div class="panel" id="UserChoice"></div>
+
+		<button class="accordion">
+			User Access, Edit & Deletion
+			<span class="countSpan"></span>
+		</button>
+		<div class="panel" id="UserAccess"></div>
+
+		<button class="accordion">
+			Data Retention
+			<span class="countSpan"></span>
+		</button>
+		<div class="panel" id="DataRetention"></div>
+
+		<button class="accordion">
+			Data Security
+			<span class="countSpan"></span>
+		</button>
+		<div class="panel" id="DataSecurity"></div>
+
+		<button class="accordion">
+			Policy Change
+			<span class="countSpan"></span>
+		</button>
+		<div class="panel" id="PolicyChange"></div>
+
+		<button class="accordion">
+			Do Not Track
+			<span class="countSpan"></span>
+		</button>
+		<div class="panel" id="DoNotTrack"></div>
+
+		<button class="accordion">
+			International & Specific Audience
+			<span class="countSpan"></span>
+		</button>
+		<div class="panel" id="International"></div>
+
+		<button class="accordion">
+			Other
+			<span class="countSpan"></span>
+		</button>
+		<div class="panel" id="Other"></div>
+	</div>
+	<div class="tabContent" id="FAIRNESS">
+		<button class="accordion">
+			Arbitration
+			<span class="countSpan"></span>
+		</button>
+		<div class="panel" id="Arbitration"></div>
+
+		<button class="accordion">
+			Unilateral Change
+			<span class="countSpan"></span>
+		</button>
+		<div class="panel" id="UnilateralChange"></div>
+
+		<button class="accordion">
+			Content Removal
+			<span class="countSpan"></span>
+		</button>
+		<div class="panel" id="ContentRemoval"></div>
+
+		<button class="accordion">
+			Jurisdiction
+			<span class="countSpan"></span>
+		</button>
+		<div class="panel" id="Jurisdiction"></div>
+
+		<button class="accordion">
+			Choice of Law
+			<span class="countSpan"></span>
+		</button>
+		<div class="panel" id="ChoiceOfLaw"></div>
+
+		<button class="accordion">
+			Limitation of Liability
+			<span class="countSpan"></span>
+		</button>
+		<div class="panel" id ="LimitationOfLiability"></div>
+
+		<button class="accordion">
+			Unilateral Termination
+			<span class="countSpan"></span>
+		</button>
+		<div class="panel" id="UnilateralTermination"></div>
+
+		<button class="accordion">
+			Contract by Using
+			<span class="countSpan"></span>
+		</button>
+		<div class="panel" id="ContractByUsing"></div>
+	</div>
+</body>
+</html>

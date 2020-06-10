@@ -1,0 +1,169 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.3em;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	width: 400px;
+}
+
+#titleHeader {
+	color: #747474;
+	font-family: 'Lobster', cursive;  
+	background-image: linear-gradient(to bottom, #dfdfdf, #cacaca);
+	padding: 10px;
+}
+
+#statusIndicator {
+	margin-left: 10px;
+	float: right;
+	font-size: 0.7em;
+	color: #aaa;
+}
+
+#analyzeButton {
+	font-size: 0.7em;
+	padding: 3px 10px;
+	border: none;
+	background-image: linear-gradient(to bottom, #8aaff3, cornflowerblue);
+	color: white;
+	float: right;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+#analyzeButton:hover {
+	background-color: #008b8b;
+	background-image: linear-gradient(to bottom, #a9c1ee, rgb(122, 160, 231));
+	border: none;
+}
+
+/* TABS */
+
+.tabFolder {
+	overflow: hidden;
+	/* background-color: #cacaca; */
+	background-image: linear-gradient(to bottom, #cacaca, #bababa);
+}
+
+.tabFolder button {
+	background-color: inherit;
+	color: #fff;
+	font-size: 0.7em;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px;
+	width: 200px;
+	text-align: center;
+	transition: 0.3s;
+}
+
+.tabFolder button.active {
+	background-image: linear-gradient(to bottom, #eaeaea, white);
+	color: #747474;
+	font-weight: bold;
+}
+
+.tabContent {
+	display: none;
+	padding: 0px;
+	margin: 0px;
+	animation: fadeEffect 0.3s;
+}
+
+@keyframes fadeEffect {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+/* ACCORDION */
+
+.accordion {
+	background-color: #fff;
+	color: #999;
+	cursor: pointer;
+	width: 100%;
+	text-align: left;
+	font-size: 0.8em;
+	border: none;
+	outline: none;
+	transition: 0.2s;
+	margin: 0px;
+	padding: 10px;
+}
+
+.accordion:after {
+	content: '\02795'; /* Unicode character for "plus" sign (+) */
+	font-size: 13px;
+	color: #747474;
+	float: right;
+	margin-left: 5px;
+}
+
+.accordion:hover:after {
+	color: white;
+}
+
+.accordion.active:after {
+	content: "\2796"; /* Unicode character for "minus" sign (-) */
+	color: white;
+}
+
+.active, .accordion:hover {
+	background-image: linear-gradient(to bottom, deepskyblue, skyblue);
+	color: white;
+}
+
+.panel {
+	padding: 0 10px;
+	background-color: skyblue;
+	color: white;
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.2s ease-out;
+}
+
+.panel > ul {
+	list-style: none;
+}
+
+.panel > ul > li {
+	font-size: 0.75em;
+	border-radius: 5px;
+	background-color: #1f8fbb;
+	margin: 5px;
+	padding: 5px;
+}
+
+#alertBox {
+	background-image: linear-gradient(to bottom, teal, #46c0c0);
+	font-size: 1.1em;
+	text-align: center;
+	padding: 5px;
+	color: white;
+}
+
+.blinking {
+	animation: blinkingText 1s infinite;
+}
+
+@keyframes blinkingText {
+	0% { color: #aaa; }
+	50% { color: yellow; }
+	100% { color: #aaa; }
+}
+
+.countSpan {
+	margin-left: 10px;
+	font-size: 0.75em;
+	font-weight: bold;
+	background-color: #ddd;
+	color: #747474;
+	padding: 5px;
+	border-radius: 50px;
+}
